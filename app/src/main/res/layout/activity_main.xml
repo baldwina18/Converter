@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs357.up.edu.converter.MainActivity"
+    android:orientation="vertical"
+    android:background="#e5d0f3">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="NFA to DFA Converter"
+        android:id="@+id/headingText"
+        android:layout_gravity="center_horizontal"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Number of States:  "
+            android:id="@+id/numLabel"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1"
+            android:id="@+id/numStatesTextView" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/numStatesSeekBar"
+        android:layout_weight="1"
+        android:longClickable="false"
+        android:max="49"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select all the states that are accept states:"
+        android:id="@+id/directions"
+        android:layout_gravity="center_horizontal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 1"
+            android:id="@+id/state1"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 2"
+            android:id="@+id/state2"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 3"
+            android:id="@+id/state3"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 4"
+            android:id="@+id/state4"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 5"
+            android:id="@+id/state5"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 6"
+            android:id="@+id/state6"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 7"
+            android:id="@+id/state7"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 8"
+            android:id="@+id/state8"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 9"
+            android:id="@+id/state9"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 10"
+            android:id="@+id/state10"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 11"
+            android:id="@+id/state11"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 12"
+            android:id="@+id/state12"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 13"
+            android:id="@+id/state13"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 14"
+            android:id="@+id/state14"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 15"
+            android:id="@+id/state15"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 16"
+            android:id="@+id/state16"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 17"
+            android:id="@+id/state17"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 18"
+            android:id="@+id/state18"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 19"
+            android:id="@+id/state19"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 20"
+            android:id="@+id/state20"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 21"
+            android:id="@+id/state21"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 22"
+            android:id="@+id/state22"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 23"
+            android:id="@+id/state23"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 24"
+            android:id="@+id/state24"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 25"
+            android:id="@+id/state25"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 26"
+            android:id="@+id/state26"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 27"
+            android:id="@+id/state27"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 28"
+            android:id="@+id/state28"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 29"
+            android:id="@+id/state29"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 30"
+            android:id="@+id/state30"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 31"
+            android:id="@+id/state31"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 32"
+            android:id="@+id/state32"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 33"
+            android:id="@+id/state33"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 34"
+            android:id="@+id/state34"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 35"
+            android:id="@+id/state35"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 36"
+            android:id="@+id/state36"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 37"
+            android:id="@+id/state37"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 38"
+            android:id="@+id/state38"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 39"
+            android:id="@+id/state39"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 40"
+            android:id="@+id/state40"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 41"
+            android:id="@+id/state41"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 42"
+            android:id="@+id/state42"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 43"
+            android:id="@+id/state43"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 44"
+            android:id="@+id/state44"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 45"
+            android:id="@+id/state45"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 46"
+            android:id="@+id/state46"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 47"
+            android:id="@+id/state47"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 48"
+            android:id="@+id/state48"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 49"
+            android:id="@+id/state49"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="State 50"
+            android:id="@+id/state50"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Page"
+        android:id="@+id/nextButton"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
